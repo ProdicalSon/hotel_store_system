@@ -1,0 +1,17 @@
+hotel_store_system/
+├── index.php
+├── css/
+│   └── style.css
+├── js/
+│   └── scripts.js
+├── db/
+│   └── config.php
+├── views/
+│   ├── dashboard.php
+│   ├── add_purchase.php
+│   ├── make_requisition.php
+│   ├── stock_report.php
+├── controllers/
+│   ├── purchase_controller.php
+│   ├── requisition_controller.php
+│   └── stock_controller.php
