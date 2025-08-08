@@ -32,3 +32,15 @@ CREATE TABLE requisitions (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (product_id) REFERENCES products(id)
 );
+
+CREATE TABLE audit_log (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    action_type ENUM('ADD','EDIT','DELETE') NOT NULL,
+    table_name VARCHAR(50) NOT NULL,
+    record_id INT NOT NULL,
+    old_value TEXT,
+    new_value TEXT,
+    changed_by VARCHAR(50) NOT NULL,
+    change_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
