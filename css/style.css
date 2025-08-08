@@ -1,0 +1,75 @@
+/* css/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f7fb;
+    color: #222;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 10px 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #1a73e8;
+}
+
+form label {
+    display: block;
+    margin: 8px 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    padding: 6px;
+    width: 250px;
+}
+
+button {
+    padding: 8px 12px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #e2e6ef;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
